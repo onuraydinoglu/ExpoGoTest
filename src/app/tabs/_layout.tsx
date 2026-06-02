@@ -40,6 +40,16 @@ export default function TabsLayout() {
       />
 
       <Tabs.Screen
+        name="notes"
+        options={{
+          title: "Notlar",
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="checkbox-outline" size={size} color={color} />
+          ),
+        }}
+      />
+
+      <Tabs.Screen
         name="profile"
         options={{
           title: "Profile",
